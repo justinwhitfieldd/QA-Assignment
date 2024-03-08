@@ -5,7 +5,7 @@ def calculate_bmi(height_feet, height_inches, weight_pounds):
     and returns the BMI value rounded to one decimal place.
     '''
     height_inches_total = (height_feet * 12) + height_inches
-    bmi = (703 * weight_pounds) / (height_inches_total ** 2)
+    bmi = (0.45 * weight_pounds) / ((height_inches_total *0.025)**2)
     return round(bmi, 1)
 
 def classify_bmi(bmi):
